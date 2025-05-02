@@ -1,7 +1,12 @@
 body {
+    display: flex;
+    justify-content: center;
     font-family: Arial, sans-serif;
     background-color: #000000;
+    align-items: center;
     text-align: center;
+    height:100vh;
+    margin: 0;
     padding: 50px;
   }
   
@@ -15,21 +20,48 @@ body {
   
   #count {
     font-size: 48px;
-    color: #333;
+    color: #000000;
     margin: 20px 0;
+    transition: transform 0.2s ease;
   }
   
   #clickBtn {
     padding: 10px 20px;
     font-size: 18px;
+    margin: 5px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
   }
   
   #clickBtn:hover {
-    background-color: #0056b3;
+    background-color: #0457af;
+  }
+
+  button:active{
+    transform:scale(0.95);
+  }
+
+  #resetBtn {
+    background-color: #09ad14; 
+    padding: 7px 14px;
+    font-size: 11px;
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  #resetBtn:hover {
+    background-color: #0b920b;
+  }
+  
+  #resetBtn:active {
+    transform: scale(0.95);
   }
   
