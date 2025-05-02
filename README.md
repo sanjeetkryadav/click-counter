@@ -1,3 +1,3 @@
 # click-counter
 
-this program clicks
+this program counts click
